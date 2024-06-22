@@ -73,7 +73,10 @@ car2.engine.capacity = 2000;
        double didtanceForCar1 = carReference.accelarate(60,1);
 
         double distacnceForCar2 = car2.accelarate(100, 1);
-
+        System.out.println("Engine manufacturer before repair: " + carReference.engine.manufacturer);
+Mechanic mechanic = new Mechanic();
+mechanic.repair(carReference);
+        System.out.println("Engine manufacturer after repair: " + carReference.engine.manufacturer);
 
 //        System.out.println("Initial name for car1: " + carReference.name);
 //carReference.name = "Audi";
