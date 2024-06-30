@@ -1,7 +1,10 @@
 package org.example;
 
 public class Vehicle {
-    
+
+    //class variable(static variable)
+   static int totalVehicleCount;
+
     //instance variables
     String name;
     double fuelLevel;
@@ -12,6 +15,9 @@ public class Vehicle {
     boolean damaged;
     String color;
 
+    public Vehicle() {
+        totalVehicleCount++;
+    }
 
     public double accelarate(double speed, double durationInHours){
         if (fuelLevel <= 0 || damaged) {
