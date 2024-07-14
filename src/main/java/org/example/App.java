@@ -21,7 +21,7 @@ public class App {
 //        new Car();
 //
 //        autoVehicle.accelerate(100);
-//        autoVehicle.accelarate(100, 3);
+//        autoVehicle.accelerate(100, 3);
 //
 //
 //
@@ -81,7 +81,7 @@ public class App {
 //        System.out.println("Fuel level: " + carReference.getFuelLevel());
 //        System.out.println("Mileage:" + carReference.getMileage());
 //        System.out.println("Total Traveled Distance: " + carReference.getTotalTraveledDistance());
-//        System.out.println("Dameged: " + carReference.isDamaged());
+//        System.out.println("Damaged: " + carReference.isDamaged());
 //        System.out.println("Door Count: " + carReference.getDoorCount());
 //        System.out.println("Color: " + carReference.getDoorCount());
 //
@@ -100,16 +100,16 @@ public class App {
 //        System.out.println("Fuel level: " + car2.getFuelLevel());
 //        System.out.println("Mileage:" + car2.getMileage());
 //        System.out.println("Total Traveled Distance: " + car2.getTotalTraveledDistance());
-//        System.out.println("Dameged: " + car2.isDamaged());
+//        System.out.println("Damaged: " + car2.isDamaged());
 //        System.out.println("Door Count: " + car2.getDoorCount());
 //        System.out.println("Color: " + car2.getDoorCount());
 //        System.out.println("Color: " + car2.getColor());
 //
 //        System.out.println("**********");
 //
-//        double distanceForCar1 = carReference.accelarate(60, 1);
+//        double distanceForCar1 = carReference.accelerate(60, 1);
 //
-//        double distanceForCar2 = car2.accelarate(130, 1);
+//        double distanceForCar2 = car2.accelerate(130, 1);
 //
 //        System.out.println("Engine manufacturer before repair: " + carReference.getEngine().getManufacturer());
 //        Mechanic mechanic = new Mechanic();
