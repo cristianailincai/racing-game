@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d2e3046-f1cd-4874-b587-24badeb9302d" name="Changes" comment="studied static variables">
+    <list default="true" id="0d2e3046-f1cd-4874-b587-24badeb9302d" name="Changes" comment="studied static methods and  final variables(constants)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AutoVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AutoVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Mechanic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/ScannerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ScannerUtils.java" afterDir="false" />
     </list>
@@ -204,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719752261036</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="studied static methods and  final variables(constant)">
+      <option name="closed" value="true" />
+      <created>1719753707788</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719753707788</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +243,7 @@
     <MESSAGE value="added modulo example" />
     <MESSAGE value="studied scanner(reading input from keybord)" />
     <MESSAGE value="studied static variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="studied static variables" />
+    <MESSAGE value="studied static methods and  final variables(constant)" />
+    <option name="LAST_COMMIT_MESSAGE" value="studied static methods and  final variables(constant)" />
   </component>
 </project>

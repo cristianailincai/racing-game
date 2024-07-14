@@ -3,9 +3,11 @@ package org.example;
 public class Mechanic {
 
     public void repair (AutoVehicle autoVehicle) {
-autoVehicle.engine = new Engine();
+autoVehicle.setEngine(new Engine());
 
-autoVehicle.damaged = false;
+autoVehicle.setDamaged(false);
+
+autoVehicle.setTotalTraveledDistance(autoVehicle.getTotalTraveledDistance() - 100);
 
     }
 }
