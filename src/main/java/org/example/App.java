@@ -1,10 +1,35 @@
 package org.example;
 
 
+import org.example.vehicles.AutoVehicle;
+import org.example.vehicles.Car;
+
 public class App {
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
+
+// example of invoking overLoaded methods and constructors
+//        Engine engine = new Engine();
+//        engine.setManufacturer("Renault");
+//        engine.setCapacity(1400);
+//
+//        AutoVehicle autoVehicle = new AutoVehicle(engine);
+//
+//        AutoVehicle autoVehicle2 = new AutoVehicle();
+//
+//        new Car();
+//
+//        autoVehicle.accelerate(100);
+//        autoVehicle.accelarate(100, 3);
+//
+//
+//
+//
+//        System.out.println("Engine capacity " + engine.getCapacity());
+//        System.out.println(engine.getCapacity());
+//        System.out.println(engine);
+
 
 //        Vehicle vehicle1 = new Vehicle();
 //        vehicle1.setName("Dacia");
@@ -82,9 +107,9 @@ public class App {
 //
 //        System.out.println("**********");
 //
-//        double didtanceForCar1 = carReference.accelarate(60, 1);
+//        double distanceForCar1 = carReference.accelarate(60, 1);
 //
-//        double distacnceForCar2 = car2.accelarate(130, 1);
+//        double distanceForCar2 = car2.accelarate(130, 1);
 //
 //        System.out.println("Engine manufacturer before repair: " + carReference.getEngine().getManufacturer());
 //        Mechanic mechanic = new Mechanic();

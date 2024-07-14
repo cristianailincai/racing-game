@@ -19,9 +19,13 @@ public class Vehicle {
 
     private LocalDate manufacturingDate = LocalDate.now();
 
-    public Vehicle() {
-        totalVehicleCount++;
+    public Vehicle() {totalVehicleCount++;}
+
+    // method overloading
+    public double accelerate(double speed) {
+        return accelarate(speed, 1);
     }
+
 
     public double accelarate(double speed, double durationInHours){
         if (fuelLevel <= 0 || damaged) {
