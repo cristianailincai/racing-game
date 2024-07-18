@@ -1,6 +1,9 @@
 package org.example;
 
 import org.example.utils.ScannerUtils;
+import org.example.vehicles.Car;
+import org.example.vehicles.Vehicle;
+import org.example.vehicles.cheater.CheatingVehicle;
 
 public class Game {
 

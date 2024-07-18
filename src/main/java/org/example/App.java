@@ -14,9 +14,18 @@ public class App {
         cheatingVehicle.setName("Cheater");
 
         //cheatingVehicle.accelerate(60,1);
-        cheatingVehicle.accelarate(60,1);
-        
 
+        // object type determines method implementation
+        cheatingVehicle.accelarate(60,1);
+
+        // variable types determines what methods can be invoked directly
+//type casting
+        if (cheatingVehicle instanceof CheatingVehicle) {
+
+
+            ((CheatingVehicle) cheatingVehicle).cheat();
+
+        }
 
 // example of invoking overLoaded methods and constructors
 //        Engine engine = new Engine();
