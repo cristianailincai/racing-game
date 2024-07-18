@@ -3,11 +3,20 @@ package org.example;
 
 import org.example.vehicles.AutoVehicle;
 import org.example.vehicles.Car;
+import org.example.vehicles.cheater.CheatingVehicle;
 
 public class App {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.start();
+//        Game game = new Game();
+//        game.start();
+
+        CheatingVehicle cheatingVehicle = new CheatingVehicle();
+        cheatingVehicle.setName("Cheater");
+
+        //cheatingVehicle.accelerate(60,1);
+        cheatingVehicle.accelarate(60,1);
+        
+
 
 // example of invoking overLoaded methods and constructors
 //        Engine engine = new Engine();
@@ -55,7 +64,7 @@ public class App {
 //        Engine engine1 = new Engine();
 //        engine1.setManufacturer("Ferrari");
 //        engine1.setCapacity(3000);
-//
+////
 //        Car carReference = new Car(engine1);
 //        carReference.setName("Ferrari");
 //        carReference.setMaxSpeed(300);
@@ -66,6 +75,7 @@ public class App {
 //        carReference.setDoorCount(1);
 //        carReference.setColor("Red");
 //
+//        System.out.println(carReference);
 //
 //        System.out.println("Engine1 capacity: " + engine1.getCapacity());
 //        System.out.println("Car engine capacity: " + carReference.getEngine().getCapacity());
