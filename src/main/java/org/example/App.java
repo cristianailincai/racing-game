@@ -7,23 +7,23 @@ import org.example.vehicles.cheater.CheatingVehicle;
 
 public class App {
     public static void main(String[] args) {
-//        Game game = new Game();
-//        game.start();
-
-        CheatingVehicle cheatingVehicle = new CheatingVehicle();
-        cheatingVehicle.setName("Cheater");
-
-        //cheatingVehicle.accelerate(60,1);
-
-        // object type determines method implementation
-        cheatingVehicle.accelarate(60,1);
+        Game game = new Game();
+        game.start();
+//
+//       Vehicle cheatingVehicle = new CheatingVehicle();
+//        cheatingVehicle.setName("Cheater");
+//
+//        //cheatingVehicle.accelerate(60,1);
+//
+//        // object type determines method implementation
+//        cheatingVehicle.accelerate(60, 1);
 
         // variable types determines what methods can be invoked directly
 //type casting
-        if (cheatingVehicle instanceof CheatingVehicle) {
-
-
-            ((CheatingVehicle) cheatingVehicle).cheat();
+//        if (cheatingVehicle instanceof CheatingVehicle) {
+//
+//
+//            ((CheatingVehicle) cheatingVehicle).cheat();
 
         }
 
@@ -144,11 +144,11 @@ public class App {
 //        carReference.setName("BMW");
 //
 //        carReference = car2;
-//        System.out.println("Name of car referenced from 2 variables.Carreference: " + carReference.getName());
+//        System.out.println("Name of car referenced from 2 variables.CarReference: " + carReference.getName());
 //        System.out.println("Name of car referenced from 2 variables. Car2: " + car2.getName());
 //
 //        car2.setName("Dacia");
-//        System.out.println("Updated name of car referenced from 2 variables.Carreference: " + carReference.getName());
+//        System.out.println("Updated name of car referenced from 2 variables.CarReference: " + carReference.getName());
 //        System.out.println("Updated name of car referenced from 2 variables. Car2: " + car2.getName());
 //
 //
@@ -163,7 +163,7 @@ public class App {
 //            System.out.println("4 is an even number");
 //        }
     }
-}
+
 
 
 
