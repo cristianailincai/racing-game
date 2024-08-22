@@ -5,10 +5,34 @@ import org.example.vehicles.AutoVehicle;
 import org.example.vehicles.Car;
 import org.example.vehicles.cheater.CheatingVehicle;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
+
+//        List<String> favoriteAuthors = new ArrayList<>();
+//        favoriteAuthors.add("Tolkien" );
+//        favoriteAuthors.add("C.S.Lewis");
+//        favoriteAuthors.add("Toldtoi");
+//        favoriteAuthors.add("Marquez");
+//
+//        System.out.println(favoriteAuthors);
+//
+//        boolean tolkienFavorite = favoriteAuthors.contains("Tolkien");
+//
+//        System.out.println(tolkienFavorite);
+//
+//        int[] integers = {1, 2, 3, 4};
+//        // wrapper classes
+//List<Integer> integerList = Arrays.asList(10, 20, 30);
+//int firstNumber = integerList.get(0);
+
+
+
 
 //        String email = "cristian.ailincai@azitrend.ro";
 //        String[] emailParts = email.split("@");
