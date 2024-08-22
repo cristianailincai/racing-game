@@ -1,23 +1,47 @@
 package org.example;
 
 
+//import jdk.internal.icu.impl.CharacterIteratorWrapper;
 import org.example.vehicles.AutoVehicle;
 import org.example.vehicles.Car;
 import org.example.vehicles.cheater.CheatingVehicle;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
 
+//        Set<String> cities = new HashSet<>();
+//        cities.add("Cluj-Napoca");
+//        cities.add("Bucuresti");
+//        System.out.println("Set size: " + cities.size());
+//        System.out.println("Set size 2: " + cities.size());
+//
+//        Iterator<String> citiesIterator = cities.iterator();
+//
+//        for (int i = 0; i < cities.size(); i++) {
+//            String nextCity = citiesIterator.next();
+//            System.out.println(nextCity);
+//        }
+
+//        while (citiesIterator.hasNext()) {
+//
+//            System.out.println(citiesIterator.next());
+//        }
+
+//
+//        String firstCity = citiesIterator.next();
+//        String secondCity = citiesIterator.next();
+//
+//        System.out.println(firstCity );
+//        System.out.println(secondCity);
+
 //        List<String> favoriteAuthors = new ArrayList<>();
 //        favoriteAuthors.add("Tolkien" );
 //        favoriteAuthors.add("C.S.Lewis");
-//        favoriteAuthors.add("Toldtoi");
+//        favoriteAuthors.add("Toltoi");
 //        favoriteAuthors.add("Marquez");
 //
 //        System.out.println(favoriteAuthors);
@@ -30,8 +54,6 @@ public class App {
 //        // wrapper classes
 //List<Integer> integerList = Arrays.asList(10, 20, 30);
 //int firstNumber = integerList.get(0);
-
-
 
 
 //        String email = "cristian.ailincai@azitrend.ro";
@@ -55,7 +77,7 @@ public class App {
 //
 //            ((CheatingVehicle) cheatingVehicle).cheat();
 
-        }
+//        }
 
 // example of invoking overLoaded methods and constructors
 //        Engine engine = new Engine();
@@ -192,6 +214,8 @@ public class App {
 //        if (4 % 2 == 0) {
 //            System.out.println("4 is an even number");
 //        }
+
+    }
     }
 
 
