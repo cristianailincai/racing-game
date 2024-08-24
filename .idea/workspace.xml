@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d2e3046-f1cd-4874-b587-24badeb9302d" name="Changes" comment="added more example of list usage">
+    <list default="true" id="0d2e3046-f1cd-4874-b587-24badeb9302d" name="Changes" comment="added set example">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
     </list>
@@ -298,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724349327848</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added set example">
+      <option name="closed" value="true" />
+      <created>1724353479357</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1724353479357</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,6 +344,7 @@
     <MESSAGE value="added String split example" />
     <MESSAGE value="added competitors lists and a simple version of a game round" />
     <MESSAGE value="added more example of list usage" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more example of list usage" />
+    <MESSAGE value="added set example" />
+    <option name="LAST_COMMIT_MESSAGE" value="added set example" />
   </component>
 </project>
