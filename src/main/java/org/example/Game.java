@@ -3,7 +3,6 @@ package org.example;
 import org.example.utils.ScannerUtils;
 import org.example.vehicles.Car;
 import org.example.vehicles.Vehicle;
-import org.example.vehicles.cheater.CheatingVehicle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,7 +70,7 @@ private List<Vehicle> competitors = new ArrayList<>();
 
             for (int i = 1; i <= playerCount; i++){
                 System.out.println("Preparing player " + i + " for the race.");
-                Vehicle vehicle = new Vehicle();
+                Vehicle vehicle = new Car();
                 vehicle.setName(getVehicleNameFromUser());
                 vehicle.setFuelLevel(30);
                 vehicle.setMaxSpeed(300);
