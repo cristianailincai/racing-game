@@ -1,6 +1,4 @@
-package org.example.vehicles;
-
-import org.example.Engine;
+package org.example.competitor.vehicle;
 
 //"is-a" relationship (inheritance)
 public class Car extends AutoVehicle{

@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0d2e3046-f1cd-4874-b587-24badeb9302d" name="Changes" comment="cleaned-up commented code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/competitor/vehicle/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/vehicles/AutoVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/vehicles/AutoVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/vehicles/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/vehicles/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/competitor/vehicle/Mechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/vehicles/AutoVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/competitor/vehicle/AutoVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/vehicles/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/competitor/vehicle/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/vehicles/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/competitor/vehicle/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/vehicles/cheater/CheatingVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/competitor/vehicle/cheater/CheatingVehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,6 @@
   <component name="ProjectId" id="2h02pMx6jMTnBKrXMqNVDKXIM6K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{

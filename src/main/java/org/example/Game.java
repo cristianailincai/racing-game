@@ -1,8 +1,8 @@
 package org.example;
 
 import org.example.utils.ScannerUtils;
-import org.example.vehicles.Car;
-import org.example.vehicles.Vehicle;
+import org.example.competitor.vehicle.Car;
+import org.example.competitor.vehicle.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
