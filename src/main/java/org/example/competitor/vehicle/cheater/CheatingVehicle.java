@@ -5,7 +5,7 @@ import org.example.competitor.vehicle.Vehicle;
 public class CheatingVehicle extends Vehicle {
 
     @Override
-    public double accelarate(double speed, double durationInHours) {
+    public double accelerate(double speed, double durationInHours) {
         System.out.println(getName() + " is accelerating with " + speed + "km/h " + durationInHours + "h");
         System.out.println("Cheater!!!");
 
