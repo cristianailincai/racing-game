@@ -3,6 +3,7 @@ package org.example.competitor.vehicle;
 import org.example.competitor.Mobile;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public abstract class Vehicle implements Mobile {
 
@@ -30,7 +31,7 @@ public abstract class Vehicle implements Mobile {
 
     // method overloading
     public double accelerate(double speed) {
-        return accelarate(speed, 1);
+        return accelerate(speed, 1);
     }
 
 
@@ -157,6 +158,19 @@ public abstract class Vehicle implements Mobile {
                 ", color='" + color + '\'' +
                 ", manufacturingDate=" + manufacturingDate +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehicle vehicle = (Vehicle) o;
+        return Double.compare(fuelLevel, vehicle.fuelLevel) == 0 && Double.compare(mileage, vehicle.mileage) == 0 && Double.compare(totalTraveledDistance, vehicle.totalTraveledDistance) == 0 && Double.compare(maxSpeed, vehicle.maxSpeed) == 0 && damaged == vehicle.damaged && Objects.equals(name, vehicle.name) && Objects.equals(color, vehicle.color) && Objects.equals(manufacturingDate, vehicle.manufacturingDate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, fuelLevel, mileage, totalTraveledDistance, maxSpeed, damaged, color, manufacturingDate);
     }
 }
 

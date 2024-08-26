@@ -26,4 +26,9 @@ public class Car extends AutoVehicle{
                 "doorCount=" + doorCount +
                 "} " + super.toString();
     }
+
+    @Override
+    public double acceleration(double speed, double durationInHours) {
+        return 0;
+    }
 }
