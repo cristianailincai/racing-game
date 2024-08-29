@@ -5,21 +5,18 @@ import org.example.utils.ScannerUtils;
 import org.example.competitor.vehicle.Car;
 import org.example.competitor.vehicle.Vehicle;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Game {
 
     private Track[] tracks = new Track[3];
-private List<Mobile> competitors = new ArrayList<>();
-private Set<Mobile> outOfRaceCompetitors = new HashSet<>();
-private boolean winnerNotKnown = true;
-private Track selectedTrack;
+    private List<Mobile> competitors = new ArrayList<>();
+    private Set<Mobile> outOfRaceCompetitors = new HashSet<>();
+    private boolean winnerNotKnown = true;
+    private Track selectedTrack;
 
-    public void start() {
+    public void start() throws Exception {
         System.out.println("Welcome to the Racing Game!");
 
         initializeTracks();
@@ -29,8 +26,9 @@ private Track selectedTrack;
 
         initializeCompetitors();
 
-loopRounds();
+        loopRounds();
     }
+
     private void loopRounds() {
         while (winnerNotKnown && outOfRaceCompetitors.size() < competitors.size()) {
             playOneRound();
@@ -45,14 +43,14 @@ loopRounds();
         for (Mobile competitor : competitors) {
             System.out.println("It's" + competitor.getName() + "'s turn.");
 
-            if (!competitor.canMove()){
+            if (!competitor.canMove()) {
                 System.out.println("Sorry,you cannot continue the race...");
                 outOfRaceCompetitors.add(competitor);
                 continue;
             }
             double speed = getAccelerationSpeedFromUser();
             competitor.accelerate(speed, 1);
-            if(competitor.getTotalTraveledDistance() >= selectedTrack.getLength() ) {
+            if (competitor.getTotalTraveledDistance() >= selectedTrack.getLength()) {
                 System.out.println("The winner is: " + competitor.getName());
                 winnerNotKnown = false;
                 break;
@@ -87,47 +85,60 @@ loopRounds();
             }
         }
 
-        }
-        private void initializeCompetitors() {
-            int playerCount = getPlayerCountFromUser();
+    }
 
-            for (int i = 1; i <= playerCount; i++){
-                System.out.println("Preparing player " + i + " for the race.");
-                Vehicle vehicle = new Car();
-                vehicle.setName(getVehicleNameFromUser());
-                vehicle.setFuelLevel(30);
-                vehicle.setMaxSpeed(300);
-                vehicle.setMileage(ThreadLocalRandom.current().nextDouble(8, 15));
+    private void initializeCompetitors() {
+        int playerCount = getPlayerCountFromUser();
 
-                System.out.println("Fuel level " + vehicle.getName() + ": " + vehicle.getFuelLevel());
-                System.out.println("Max speed for " + vehicle.getName() + ": " + vehicle.getMaxSpeed());
-                System.out.println("Mileage for " + vehicle.getName() + ": " + vehicle.getMileage());
-                System.out.println();
-                competitors.add(vehicle);
-            }
+        for (int i = 1; i <= playerCount; i++) {
+            System.out.println("Preparing player " + i + " for the race.");
+            Vehicle vehicle = new Car();
+            vehicle.setName(getVehicleNameFromUser());
+            vehicle.setFuelLevel(30);
+            vehicle.setMaxSpeed(300);
+            vehicle.setMileage(ThreadLocalRandom.current().nextDouble(8, 15));
 
-        }
-
-        private int getPlayerCountFromUser () {
-            System.out.println("Please enter number of players:");
-            return ScannerUtils.nextIntAndMoveToNextLine();
-
-        }
-        private String getVehicleNameFromUser () {
-            System.out.println("Please enter vehicle name");
-            return ScannerUtils.nextLine();
-
+            System.out.println("Fuel level " + vehicle.getName() + ": " + vehicle.getFuelLevel());
+            System.out.println("Max speed for " + vehicle.getName() + ": " + vehicle.getMaxSpeed());
+            System.out.println("Mileage for " + vehicle.getName() + ": " + vehicle.getMileage());
+            System.out.println();
+            competitors.add(vehicle);
         }
 
-        private Track getSelectedTrackFromUser() {
-            System.out.println("Please select a track:");
+    }
+
+    private int getPlayerCountFromUser() {
+        System.out.println("Please enter number of players:");
+        return ScannerUtils.nextIntAndMoveToNextLine();
+
+    }
+
+    private String getVehicleNameFromUser() {
+        System.out.println("Please enter vehicle name");
+        return ScannerUtils.nextLine();
+
+    }
+
+    private Track getSelectedTrackFromUser() throws Exception {
+        System.out.println("Please select a track:");
+
+        try {
             int trackNumber = ScannerUtils.nextIntAndMoveToNextLine();
 
-            return tracks [trackNumber - 1];
-        }
+            return tracks[trackNumber - 1];
 
-        private double getAccelerationSpeedFromUser() {
+        } catch (InputMismatchException e) {
+            System.out.println("Please enter a valid number.");
+            throw new Exception("You have entered an invalid value.");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            throw  new RuntimeException("You have entered an invalid number.");
+        } finally {
+            System.out.println("Finally block is always executed.");
+        }
+    }
+        private double getAccelerationSpeedFromUser () {
             System.out.println("Please enter acceleration speed:");
             return ScannerUtils.nextDoubleAndMoveToNextLine();
         }
+
     }

@@ -4,7 +4,7 @@ import org.example.competitor.vehicle.Car;
 import org.example.competitor.vehicle.Engine;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Game game = new Game();
         game.start();        System.out.println(car1.equals(car2));
 
