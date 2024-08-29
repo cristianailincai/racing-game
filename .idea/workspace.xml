@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d2e3046-f1cd-4874-b587-24badeb9302d" name="Changes" comment="deleted commented examples">
+    <list default="true" id="0d2e3046-f1cd-4874-b587-24badeb9302d" name="Changes" comment="added try-catch and checked/unchecked exception example">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/ScannerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ScannerUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724693462877</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added try-catch and checked/unchecked exception example">
+      <option name="closed" value="true" />
+      <created>1724955172035</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1724955172035</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,7 +386,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="invoking method" />
     <MESSAGE value="added mechanic and method reciving objects param" />
     <MESSAGE value="studied conditional statementsx" />
     <MESSAGE value="added modulo example" />
@@ -403,7 +410,8 @@
     <MESSAGE value="implemented method to loop rounds(added while example)" />
     <MESSAGE value="added String Pool and object comparison examples" />
     <MESSAGE value="deleted commented examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted commented examples" />
+    <MESSAGE value="added try-catch and checked/unchecked exception example" />
+    <option name="LAST_COMMIT_MESSAGE" value="added try-catch and checked/unchecked exception example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
